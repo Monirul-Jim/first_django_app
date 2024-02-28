@@ -4,4 +4,4 @@ from django.http import HttpResponse
 
 
 def data_analysis(request):
-    return render(request, 'data_analysis.html')
+    return render(request, 'data_analysises/data_analysis.html')

@@ -4,7 +4,12 @@ from django.http import HttpResponse
 
 
 def machine(request):
-    return render(request, 'machine_learn/machine_learning.html')
+    course = 'machine learning'
+    TClass = 21
+    seat = 20
+    duration = '2.5 month'
+    offering = {'c': course, 'tl': TClass, 'st': seat, 'cd': duration}
+    return render(request, 'machine_learn/machine_learning.html', context=offering)
 
 
 def random(request):

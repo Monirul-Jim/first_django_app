@@ -395,7 +395,7 @@
         "kind": 2,
         "importPath": "Blogs.views",
         "description": "Blogs.views",
-        "peekOfCode": "def blog1(request):\n    return render(request, 'blogs.html')",
+        "peekOfCode": "def blog1(request):\n    return render(request, 'blogs/blogs.html')",
         "detail": "Blogs.views",
         "documentation": {}
     },
@@ -422,7 +422,7 @@
         "kind": 2,
         "importPath": "Data_analysis.views",
         "description": "Data_analysis.views",
-        "peekOfCode": "def data_analysis(request):\n    return render(request, 'data_analysis.html')",
+        "peekOfCode": "def data_analysis(request):\n    return render(request, 'data_analysises/data_analysis.html')",
         "detail": "Data_analysis.views",
         "documentation": {}
     },
@@ -476,7 +476,7 @@
         "kind": 2,
         "importPath": "machine_learning.views",
         "description": "machine_learning.views",
-        "peekOfCode": "def machine(request):\n    return render(request, 'machine_learn/machine_learning.html')\ndef random(request):\n    return render(request, \"machine_learn/random_forest.html\")\ndef K_nearest(request):\n    return render(request, \"machine_learn/knn.html\")\ndef dtree(request):\n    return render(request, \"machine_learn/DT.html\")",
+        "peekOfCode": "def machine(request):\n    course = 'machine learning'\n    TClass = 21\n    seat = 20\n    duration = '2.5 month'\n    offering = {'c': course, 'tl': TClass, 'st': seat, 'cd': duration}\n    return render(request, 'machine_learn/machine_learning.html', context=offering)\ndef random(request):\n    return render(request, \"machine_learn/random_forest.html\")\ndef K_nearest(request):",
         "detail": "machine_learning.views",
         "documentation": {}
     },
