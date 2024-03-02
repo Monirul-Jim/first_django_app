@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
 
-    path('', views.Deep_Learning,),
+    path('', views.Deep_Learning, name='deep'),
 ]

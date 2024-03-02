@@ -1,0 +1,43 @@
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Study mart offering <span>{{what}}</span> course</h1>
+    {% endcomment %} {% comment %}
+    <h1>
+      We offering {{c}} course. There have more than {{tl}} available {{st}}
+      seat.Finally needed for course complete time {{cd}}
+    </h1>
+    <h2>{{c |upper}}</h2>
+    <h2>{{c |capfirst}}</h2>
+    <h2>{{c | title }}</h2>
+    {% if z %}
+    <h1>The c part exist</h1>
+    {% else %}
+    <h2>Anohter message for when c does not exist</h2>
+    {% endif %} {% endcomment %} {% comment %}
+    <h1>Hello</h1>
+    {% for tn in names reversed %} {{forloop.counter }}. {{tn}} <br />
+    {% endfor %}
+  </body>
+</html>
+{% endcomment %}
+
+{% comment %} <!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dt</title>
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}" />
+  </head>
+  <body>
+    <h1>Decision Tree</h1>
+  </body>
+</html>
+{% endcomment %}

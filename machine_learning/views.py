@@ -3,13 +3,16 @@ from django.http import HttpResponse
 # Create your views here.
 
 
+# def machine(request):
+#     course = 'machine learning'
+#     TClass = 21
+#     seat = 20
+#     duration = '2.5 month'
+#     offering = {'c': course, 'tl': TClass, 'st': seat, 'cd': duration}
+#     return render(request, 'machine_learn/machine_learning.html', context=offering)
 def machine(request):
-    course = 'machine learning'
-    TClass = 21
-    seat = 20
-    duration = '2.5 month'
-    offering = {'c': course, 'tl': TClass, 'st': seat, 'cd': duration}
-    return render(request, 'machine_learn/machine_learning.html', context=offering)
+    Teachers = {'names': ['Shakil', 'Mezba', 'Sohanur', 'AiQuest']}
+    return render(request, 'machine_learn/machine_learning.html', context=Teachers)
 
 
 def random(request):

@@ -30,6 +30,6 @@ urlpatterns = [
     path('about/', include('About_us.urls')),
     path('blog/', include('Blogs.urls')),
     path('data_ana/', include('Data_analysis.urls')),
-    path('deep_lear/', include('Deep_learning.urls')),
+    path('deep/', include('Deep_learning.urls')),
 
 ]

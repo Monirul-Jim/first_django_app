@@ -3,8 +3,8 @@ from . import views
 
 urlpatterns = [
 
-    path('machine/', views.machine),
-    path('random/', views.random),
-    path('knn/', views.K_nearest),
-    path('dt/', views.dtree),
+    path('machine/', views.machine, name='machine_learning'),
+    path('random/', views.random, name='random_number'),
+    path('knn/', views.K_nearest, name='knn'),
+    path('dt/', views.dtree, name='dt'),
 ]

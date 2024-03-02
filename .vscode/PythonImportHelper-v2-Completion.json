@@ -1,90 +1,18 @@
 [
     {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
         "isExtraImport": true,
-        "detail": "django.contrib",
+        "detail": "django.db",
         "documentation": {}
     },
     {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
         "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
+        "detail": "django.db",
         "documentation": {}
     },
     {
@@ -125,6 +53,110 @@
         "description": "django.db",
         "isExtraImport": true,
         "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "Teacher",
+        "importPath": "About_us.models",
+        "description": "About_us.models",
+        "isExtraImport": true,
+        "detail": "About_us.models",
+        "documentation": {}
+    },
+    {
+        "label": "Teacher",
+        "importPath": "About_us.models",
+        "description": "About_us.models",
+        "isExtraImport": true,
+        "detail": "About_us.models",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
         "documentation": {}
     },
     {
@@ -346,6 +378,24 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "About_us.migrations.0001_initial",
+        "description": "About_us.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Teacher',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('tid', models.IntegerField()),",
+        "detail": "About_us.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "TeacherAdmin",
+        "kind": 6,
+        "importPath": "About_us.admin",
+        "description": "About_us.admin",
+        "peekOfCode": "class TeacherAdmin(admin.ModelAdmin):\n    list_display = ('id', 'tid', 'tName', 'tEmail')\nadmin.site.register(Teacher, TeacherAdmin)",
+        "detail": "About_us.admin",
+        "documentation": {}
+    },
+    {
         "label": "AboutUsConfig",
         "kind": 6,
         "importPath": "About_us.apps",
@@ -355,11 +405,20 @@
         "documentation": {}
     },
     {
+        "label": "Teacher",
+        "kind": 6,
+        "importPath": "About_us.models",
+        "description": "About_us.models",
+        "peekOfCode": "class Teacher(models.Model):\n    tid = models.IntegerField()\n    tName = models.CharField(max_length=40)\n    tEmail = models.EmailField(max_length=30)",
+        "detail": "About_us.models",
+        "documentation": {}
+    },
+    {
         "label": "urlpatterns",
         "kind": 5,
         "importPath": "About_us.urls",
         "description": "About_us.urls",
-        "peekOfCode": "urlpatterns = [\n    path('a/', views.About_us,),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('a/', views.About_us, name='about'),\n    path('t/', views.teachers_info)\n]",
         "detail": "About_us.urls",
         "documentation": {}
     },
@@ -368,7 +427,16 @@
         "kind": 2,
         "importPath": "About_us.views",
         "description": "About_us.views",
-        "peekOfCode": "def About_us(request):\n    return render(request,'about.html')",
+        "peekOfCode": "def About_us(request):\n    return render(request, 'about/about.html')\ndef teachers_info(request):\n    teach = Teacher.objects.all()\n    return render(request,'about/t.html',{'thr':teach} )",
+        "detail": "About_us.views",
+        "documentation": {}
+    },
+    {
+        "label": "teachers_info",
+        "kind": 2,
+        "importPath": "About_us.views",
+        "description": "About_us.views",
+        "peekOfCode": "def teachers_info(request):\n    teach = Teacher.objects.all()\n    return render(request,'about/t.html',{'thr':teach} )",
         "detail": "About_us.views",
         "documentation": {}
     },
@@ -413,7 +481,7 @@
         "kind": 5,
         "importPath": "Data_analysis.urls",
         "description": "Data_analysis.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.data_analysis,),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', views.data_analysis, name='data_analysis'),\n]",
         "detail": "Data_analysis.urls",
         "documentation": {}
     },
@@ -440,7 +508,7 @@
         "kind": 5,
         "importPath": "Deep_learning.urls",
         "description": "Deep_learning.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.Deep_Learning,),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', views.Deep_Learning, name='deep'),\n]",
         "detail": "Deep_learning.urls",
         "documentation": {}
     },
@@ -467,7 +535,7 @@
         "kind": 5,
         "importPath": "machine_learning.urls",
         "description": "machine_learning.urls",
-        "peekOfCode": "urlpatterns = [\n    path('machine/', views.machine),\n    path('random/', views.random),\n    path('knn/', views.K_nearest),\n    path('dt/', views.dtree),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('machine/', views.machine, name='machine_learning'),\n    path('random/', views.random, name='random_number'),\n    path('knn/', views.K_nearest, name='knn'),\n    path('dt/', views.dtree, name='dt'),\n]",
         "detail": "machine_learning.urls",
         "documentation": {}
     },
@@ -476,7 +544,7 @@
         "kind": 2,
         "importPath": "machine_learning.views",
         "description": "machine_learning.views",
-        "peekOfCode": "def machine(request):\n    course = 'machine learning'\n    TClass = 21\n    seat = 20\n    duration = '2.5 month'\n    offering = {'c': course, 'tl': TClass, 'st': seat, 'cd': duration}\n    return render(request, 'machine_learn/machine_learning.html', context=offering)\ndef random(request):\n    return render(request, \"machine_learn/random_forest.html\")\ndef K_nearest(request):",
+        "peekOfCode": "def machine(request):\n    Teachers = {'names': ['Shakil', 'Mezba', 'Sohanur', 'AiQuest']}\n    return render(request, 'machine_learn/machine_learning.html', context=Teachers)\ndef random(request):\n    return render(request, \"machine_learn/random_forest.html\")\ndef K_nearest(request):\n    return render(request, \"machine_learn/knn.html\")\ndef dtree(request):\n    return render(request, \"machine_learn/DT.html\")",
         "detail": "machine_learning.views",
         "documentation": {}
     },
@@ -521,7 +589,7 @@
         "kind": 5,
         "importPath": "study_mart.settings",
         "description": "study_mart.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\nTEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-r5mixgk)&$oy!8q#qodbkl7aqh@vhnu6mm!5(2*ajvc*l@zz+t'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\nTEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')\nSTATIC_DIR = os.path.join(BASE_DIR, 'static')\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-r5mixgk)&$oy!8q#qodbkl7aqh@vhnu6mm!5(2*ajvc*l@zz+t'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []",
         "detail": "study_mart.settings",
         "documentation": {}
     },
@@ -530,7 +598,16 @@
         "kind": 5,
         "importPath": "study_mart.settings",
         "description": "study_mart.settings",
-        "peekOfCode": "TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-r5mixgk)&$oy!8q#qodbkl7aqh@vhnu6mm!5(2*ajvc*l@zz+t'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "peekOfCode": "TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')\nSTATIC_DIR = os.path.join(BASE_DIR, 'static')\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-r5mixgk)&$oy!8q#qodbkl7aqh@vhnu6mm!5(2*ajvc*l@zz+t'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition",
+        "detail": "study_mart.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_DIR",
+        "kind": 5,
+        "importPath": "study_mart.settings",
+        "description": "study_mart.settings",
+        "peekOfCode": "STATIC_DIR = os.path.join(BASE_DIR, 'static')\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-r5mixgk)&$oy!8q#qodbkl7aqh@vhnu6mm!5(2*ajvc*l@zz+t'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
         "detail": "study_mart.settings",
         "documentation": {}
     },
@@ -629,7 +706,7 @@
         "kind": 5,
         "importPath": "study_mart.settings",
         "description": "study_mart.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [STATIC_DIR]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field",
         "detail": "study_mart.settings",
         "documentation": {}
     },
@@ -638,7 +715,7 @@
         "kind": 5,
         "importPath": "study_mart.settings",
         "description": "study_mart.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [STATIC_DIR]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "study_mart.settings",
         "documentation": {}
     },
@@ -647,7 +724,7 @@
         "kind": 5,
         "importPath": "study_mart.settings",
         "description": "study_mart.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [STATIC_DIR]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "study_mart.settings",
         "documentation": {}
     },
@@ -656,7 +733,7 @@
         "kind": 5,
         "importPath": "study_mart.settings",
         "description": "study_mart.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [STATIC_DIR]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "study_mart.settings",
         "documentation": {}
     },
@@ -665,7 +742,16 @@
         "kind": 5,
         "importPath": "study_mart.settings",
         "description": "study_mart.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATICFILES_DIRS = [STATIC_DIR]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "study_mart.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_DIRS",
+        "kind": 5,
+        "importPath": "study_mart.settings",
+        "description": "study_mart.settings",
+        "peekOfCode": "STATICFILES_DIRS = [STATIC_DIR]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "study_mart.settings",
         "documentation": {}
     },
@@ -683,7 +769,7 @@
         "kind": 5,
         "importPath": "study_mart.urls",
         "description": "study_mart.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('ml/', include('machine_learning.urls')),\n    path('about/', include('About_us.urls')),\n    path('blog/', include('Blogs.urls')),\n    path('data_ana/', include('Data_analysis.urls')),\n    path('deep_lear/', include('Deep_learning.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('ml/', include('machine_learning.urls')),\n    path('about/', include('About_us.urls')),\n    path('blog/', include('Blogs.urls')),\n    path('data_ana/', include('Data_analysis.urls')),\n    path('deep/', include('Deep_learning.urls')),\n]",
         "detail": "study_mart.urls",
         "documentation": {}
     },
