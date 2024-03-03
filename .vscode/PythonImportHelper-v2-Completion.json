@@ -368,6 +368,14 @@
         "documentation": {}
     },
     {
+        "label": "View",
+        "importPath": "django.views",
+        "description": "django.views",
+        "isExtraImport": true,
+        "detail": "django.views",
+        "documentation": {}
+    },
+    {
         "label": "UserCreationForm",
         "importPath": "django.contrib.auth.forms",
         "description": "django.contrib.auth.forms",
@@ -539,8 +547,17 @@
         "kind": 5,
         "importPath": "Data_analysis.urls",
         "description": "Data_analysis.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.data_analysis, name='data_analysis'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', views.data_analysis, name='data_analysis'),\n    path('class/', views.DataAnalysis.as_view())\n]",
         "detail": "Data_analysis.urls",
+        "documentation": {}
+    },
+    {
+        "label": "DataAnalysis",
+        "kind": 6,
+        "importPath": "Data_analysis.views",
+        "description": "Data_analysis.views",
+        "peekOfCode": "class DataAnalysis(View):\n    def get(self, request):\n        return render(request, 'data_analysises/class.html')",
+        "detail": "Data_analysis.views",
         "documentation": {}
     },
     {
@@ -548,7 +565,7 @@
         "kind": 2,
         "importPath": "Data_analysis.views",
         "description": "Data_analysis.views",
-        "peekOfCode": "def data_analysis(request):\n    return render(request, 'data_analysises/data_analysis.html')",
+        "peekOfCode": "def data_analysis(request):\n    return render(request, 'data_analysises/data_analysis.html')\nclass DataAnalysis(View):\n    def get(self, request):\n        return render(request, 'data_analysises/class.html')",
         "detail": "Data_analysis.views",
         "documentation": {}
     },
@@ -566,7 +583,7 @@
         "kind": 5,
         "importPath": "Deep_learning.urls",
         "description": "Deep_learning.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.Deep_Learning, name='deep'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', views.Deep_Learning, name='deep'),\n    path('register/', views.registration)\n]",
         "detail": "Deep_learning.urls",
         "documentation": {}
     },
@@ -575,7 +592,7 @@
         "kind": 2,
         "importPath": "Deep_learning.views",
         "description": "Deep_learning.views",
-        "peekOfCode": "def Deep_Learning(request):\n    return render(request, 'deep_learn/deep_learning.html')\ndef registration(request):\n    fm = UserCreationForm()\n    return render(request, 'deep_learn/register.html', {'form': fm})",
+        "peekOfCode": "def Deep_Learning(request):\n    return render(request, 'deep_learn/deep_learning.html')\ndef registration(request):\n    if request.method == \"POST\":\n        fm = UserCreationForm(request.POST)\n        if fm.is_valid():\n            fm.save\n    else:\n        fm = UserCreationForm()\n    return render(request, 'deep_learn/register.html', {'form': fm})",
         "detail": "Deep_learning.views",
         "documentation": {}
     },
@@ -584,7 +601,7 @@
         "kind": 2,
         "importPath": "Deep_learning.views",
         "description": "Deep_learning.views",
-        "peekOfCode": "def registration(request):\n    fm = UserCreationForm()\n    return render(request, 'deep_learn/register.html', {'form': fm})",
+        "peekOfCode": "def registration(request):\n    if request.method == \"POST\":\n        fm = UserCreationForm(request.POST)\n        if fm.is_valid():\n            fm.save\n    else:\n        fm = UserCreationForm()\n    return render(request, 'deep_learn/register.html', {'form': fm})",
         "detail": "Deep_learning.views",
         "documentation": {}
     },

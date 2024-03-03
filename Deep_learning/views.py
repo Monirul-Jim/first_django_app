@@ -10,5 +10,11 @@ def Deep_Learning(request):
 
 
 def registration(request):
-    fm = UserCreationForm()
+
+    if request.method == "POST":
+        fm = UserCreationForm(request.POST)
+        if fm.is_valid():
+            fm.save
+    else:
+        fm = UserCreationForm()
     return render(request, 'deep_learn/register.html', {'form': fm})

@@ -1,11 +1,19 @@
 <!DOCTYPE html>
+{% load static  %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>User || Register</title>
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
 </head>
 <body>
-    
+    <form action="" method="POST">{% csrf_token %}
+        {% for fm in form %}
+        {{fm.label_tag}} {{fm}} {{fm.error | striptags}}
+        {%endfor%}
+        {% comment %} {{form.as_p}}  {% endcomment %}
+        <input type="submit" value="Register">
+    </form>
 </body>
 </html>

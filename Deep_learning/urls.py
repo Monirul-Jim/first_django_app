@@ -4,4 +4,5 @@ from . import views
 urlpatterns = [
 
     path('', views.Deep_Learning, name='deep'),
+    path('register/', views.registration)
 ]
