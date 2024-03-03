@@ -336,6 +336,46 @@
         "documentation": {}
     },
     {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "validators",
+        "importPath": "django.core",
+        "description": "django.core",
+        "isExtraImport": true,
+        "detail": "django.core",
+        "documentation": {}
+    },
+    {
+        "label": "TeachersRegistration",
+        "importPath": "Blogs.forms",
+        "description": "Blogs.forms",
+        "isExtraImport": true,
+        "detail": "Blogs.forms",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -450,11 +490,20 @@
         "documentation": {}
     },
     {
+        "label": "TeachersRegistration",
+        "kind": 6,
+        "importPath": "Blogs.forms",
+        "description": "Blogs.forms",
+        "peekOfCode": "class TeachersRegistration(forms.Form):\n    first_name = forms.CharField(\n        label=\"Enter your first name\", label_suffix=' ')\n    last_name = forms.CharField(\n        label=\"Enter your last name\",   widget=forms.TextInput(attrs={'placeholder': 'Enter your last name'}))\n    email = forms.EmailField(label=\"Enter your email\", widget=forms.EmailInput(\n        attrs={'placeholder': 'Enter your email'}))\n    password = forms.CharField(widget=forms.PasswordInput)\n    re_password = forms.CharField(widget=forms.PasswordInput)\n    textarea = forms.CharField(widget=forms.Textarea)",
+        "detail": "Blogs.forms",
+        "documentation": {}
+    },
+    {
         "label": "urlpatterns",
         "kind": 5,
         "importPath": "Blogs.urls",
         "description": "Blogs.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.blog1),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', views.blog1),\n    path('f/', views.showFormsData),\n]",
         "detail": "Blogs.urls",
         "documentation": {}
     },
@@ -463,7 +512,16 @@
         "kind": 2,
         "importPath": "Blogs.views",
         "description": "Blogs.views",
-        "peekOfCode": "def blog1(request):\n    return render(request, 'blogs/blogs.html')",
+        "peekOfCode": "def blog1(request):\n    return render(request, 'blogs/blogs.html')\ndef showFormsData(request):\n    if request.method == 'POST':\n        fm = TeachersRegistration(request.POST)\n        if fm.is_valid():\n            print(fm.cleaned_data['password'])\n            print(fm.cleaned_data['re_password'])\n    else:\n        fm = TeachersRegistration()",
+        "detail": "Blogs.views",
+        "documentation": {}
+    },
+    {
+        "label": "showFormsData",
+        "kind": 2,
+        "importPath": "Blogs.views",
+        "description": "Blogs.views",
+        "peekOfCode": "def showFormsData(request):\n    if request.method == 'POST':\n        fm = TeachersRegistration(request.POST)\n        if fm.is_valid():\n            print(fm.cleaned_data['password'])\n            print(fm.cleaned_data['re_password'])\n    else:\n        fm = TeachersRegistration()\n        print('this is get statement')\n    # fm.order_fields(field_order=['email', 'last_name', 'first_name'])",
         "detail": "Blogs.views",
         "documentation": {}
     },
@@ -517,7 +575,16 @@
         "kind": 2,
         "importPath": "Deep_learning.views",
         "description": "Deep_learning.views",
-        "peekOfCode": "def Deep_Learning(request):\n    return render(request,'deep_learning.html')",
+        "peekOfCode": "def Deep_Learning(request):\n    return render(request, 'deep_learn/deep_learning.html')\ndef registration(request):\n    fm = UserCreationForm()\n    return render(request, 'deep_learn/register.html', {'form': fm})",
+        "detail": "Deep_learning.views",
+        "documentation": {}
+    },
+    {
+        "label": "registration",
+        "kind": 2,
+        "importPath": "Deep_learning.views",
+        "description": "Deep_learning.views",
+        "peekOfCode": "def registration(request):\n    fm = UserCreationForm()\n    return render(request, 'deep_learn/register.html', {'form': fm})",
         "detail": "Deep_learning.views",
         "documentation": {}
     },
